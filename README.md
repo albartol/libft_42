@@ -1,0 +1,1 @@
+## This is not the first project at 42, there are more functions than the ones asked for in the libft and others are modified.
