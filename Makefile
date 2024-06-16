@@ -37,7 +37,7 @@ NAME := libft.a
 
 all: $(OBJ_DIR) $(NAME)
 
-$(NAME): $(OBJS) $(LIBFT)
+$(NAME): $(OBJS)
 	ar -rcs $@ $^
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
