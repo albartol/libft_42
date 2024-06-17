@@ -48,7 +48,7 @@ static char	*substr_nl(char *str)
 	res = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!res)
 		return (0);
-	ft_strlcpy(res, str, len);
+	ft_strlcpy(res, str, len + 1);
 	return (res);
 }
 
@@ -71,8 +71,8 @@ static char	*strjoin_nl(char *s1, char *s2)
 	str = (char *)ft_calloc(len1 + len2 + 1, sizeof(char));
 	if (!str)
 		return (free(s1), NULL);
-	ft_strlcpy(str, s1, len1);
-	ft_strlcat(str, s2, len2);
+	ft_strlcpy(str, s1, len1 + 1);
+	ft_strlcpy(str + len1, s2, len2 + 1);
 	return (free(s1), str);
 }
 
