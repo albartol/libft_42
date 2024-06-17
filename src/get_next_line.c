@@ -72,7 +72,7 @@ static char	*strjoin_nl(char *s1, char *s2)
 	if (!str)
 		return (free(s1), NULL);
 	ft_strlcpy(str, s1, len1);
-	ft_strlcpy(str + len1, s2, len2);
+	ft_strlcat(str, s2, len2);
 	return (free(s1), str);
 }
 
